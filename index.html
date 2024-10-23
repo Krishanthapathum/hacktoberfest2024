@@ -4,10 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HacktoberFest2024</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #007BFF;
+        }
+        section {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+    </style>
 </head>
 <body>
-    <h1>hello there</h1>
-    <h2> HacktoberFest2024</h2>
-    <h3>Contribute</h3>
+    <h1>Hello there</h1>
+    <h2>HacktoberFest2024</h2>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contribute">Contribute</a></li>
+            <li><a href="#resources">Resources</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <section id="about">
+        <h2>About HacktoberFest 2024</h2>
+        <p>HacktoberFest is a month-long celebration of open source software...</p>
+    </section>
+
+    <section id="contribute">
+        <h2>How to Contribute</h2>
+        <p>Follow these steps to get involved...</p>
+    </section>
+
+    <section id="resources">
+        <h2>Resources</h2>
+        <ul>
+            <li><a href="https://hacktoberfest.digitalocean.com/">Official Site</a></li>
+            <li><a href="https://github.com/explore">Explore GitHub</a></li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Send</button>
+        </form>
+    </section>
 </body>
 </html>
