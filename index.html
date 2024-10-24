@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>HacktoberFest2024</title>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-   
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HacktoberFest 2024</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     
     <style>
         body {
@@ -36,11 +35,33 @@
             border-radius: 5px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            padding: 10px 0;
+            background-color: #e9ecef;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        form label {
+            display: block;
+            margin-top: 10px;
+        }
     </style>
 </head>
 <body>
     <h1>Hello there</h1>
-    <h2>HacktoberFest2024</h2>
+    <h2>HacktoberFest 2024</h2>
     <nav>
         <ul>
             <li><a href="#about">About</a></li>
@@ -52,12 +73,19 @@
     
     <section id="about">
         <h2>About HacktoberFest 2024</h2>
-        <p>HacktoberFest is a month-long celebration of open source software...</p>
+        <p>HacktoberFest is a month-long celebration of open source software, encouraging contributions to various projects. Whether you're a beginner or a seasoned developer, there's something for everyone!</p>
+        <p>Join us in making the open source community better by contributing your code, participating in discussions, or even just learning from others!</p>
     </section>
 
     <section id="contribute">
         <h2>How to Contribute</h2>
-        <p>Follow these steps to get involved...</p>
+        <p>Follow these steps to get involved:</p>
+        <ol>
+            <li>Sign up on the official HacktoberFest website.</li>
+            <li>Find a project you'd like to contribute to on GitHub.</li>
+            <li>Make your contributions (pull requests) to the project.</li>
+            <li>Share your contributions on social media using #HacktoberFest.</li>
+        </ol>
     </section>
 
     <section id="resources">
@@ -65,6 +93,7 @@
         <ul>
             <li><a href="https://hacktoberfest.digitalocean.com/">Official Site</a></li>
             <li><a href="https://github.com/explore">Explore GitHub</a></li>
+            <li><a href="https://opensource.guide/how-to-contribute/">How to Contribute to Open Source</a></li>
         </ul>
     </section>
 
@@ -77,11 +106,23 @@
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
             
+            <label for="subject">Subject:</label>
+            <select id="subject" name="subject" required>
+                <option value="">Select a subject</option>
+                <option value="general">General Inquiry</option>
+                <option value="support">Support</option>
+                <option value="feedback">Feedback</option>
+            </select>
+
             <label for="message">Message:</label>
             <textarea id="message" name="message" required></textarea>
             
             <button type="submit">Send</button>
         </form>
     </section>
+
+    <footer>
+        <p>&copy; 2024 HacktoberFest. Follow us on <a href="https://twitter.com/hacktoberfest" target="_blank">Twitter</a> | <a href="https://github.com/hacktoberfest" target="_blank">GitHub</a></p>
+    </footer>
 </body>
 </html>
