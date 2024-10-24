@@ -57,16 +57,33 @@
             display: block;
             margin-top: 10px;
         }
+        .hero {
+            background-image: url('https://via.placeholder.com/1200x300'); /* Replace with actual image URL */
+            height: 300px;
+            background-size: cover;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
     </style>
 </head>
 <body>
-    <h1>Hello there</h1>
+    <div class="hero">
+        <h1>Welcome to HacktoberFest 2024!</h1>
+    </div>
+
     <h2>HacktoberFest 2024</h2>
     <nav>
         <ul>
             <li><a href="#about">About</a></li>
             <li><a href="#contribute">Contribute</a></li>
             <li><a href="#resources">Resources</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#testimonials">Success Stories</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
@@ -90,11 +107,41 @@
 
     <section id="resources">
         <h2>Resources</h2>
-        <ul>
-            <li><a href="https://hacktoberfest.digitalocean.com/">Official Site</a></li>
-            <li><a href="https://github.com/explore">Explore GitHub</a></li>
-            <li><a href="https://opensource.guide/how-to-contribute/">How to Contribute to Open Source</a></li>
-        </ul>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Official Site</h5>
+                        <p class="card-text"><a href="https://hacktoberfest.digitalocean.com/">Visit HacktoberFest</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Explore GitHub</h5>
+                        <p class="card-text"><a href="https://github.com/explore">Explore GitHub Projects</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq">
+        <h2>Frequently Asked Questions (FAQ)</h2>
+        <p><strong>What is HacktoberFest?</strong> HacktoberFest is an annual event where developers are encouraged to contribute to open source projects.</p>
+        <p><strong>Who can participate?</strong> Anyone can participate, regardless of skill level!</p>
+        <p><strong>Is there a fee to join?</strong> No, HacktoberFest is free to join.</p>
+    </section>
+
+    <section id="testimonials">
+        <h2>Success Stories</h2>
+        <blockquote>
+            <p>"Participating in HacktoberFest helped me grow my coding skills and connect with other developers!" - Jane Doe</p>
+        </blockquote>
+        <blockquote>
+            <p>"I made my first open source contribution during HacktoberFest and it was an amazing experience!" - John Smith</p>
+        </blockquote>
     </section>
 
     <section id="contact">
@@ -118,6 +165,13 @@
             <textarea id="message" name="message" required></textarea>
             
             <button type="submit">Send</button>
+        </form>
+        
+        <h3>Subscribe to Our Newsletter</h3>
+        <form action="#" method="post">
+            <label for="newsletter-email">Email:</label>
+            <input type="email" id="newsletter-email" name="newsletter-email" required>
+            <button type="submit">Subscribe</button>
         </form>
     </section>
 
