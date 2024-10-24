@@ -16,7 +16,7 @@
         h1, h2, h3 {
             color: #333;
         }
-        nav ul 
+        nav ul {
             list-style-type: none;
             padding: 0;
         }
@@ -78,13 +78,25 @@
 
     <h2>HacktoberFest 2024</h2>
     <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contribute">Contribute</a></li>
-            <li><a href="#resources">Resources</a></li>
-            <li><a href="#faq">FAQ</a></li>
-            <li><a href="#testimonials">Success Stories</a></li>
-            <li><a href="#contact">Contact</a></li>
+        <ul class="nav nav-pills flex-column flex-sm-row">
+            <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contribute">Contribute</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#resources">Resources</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#faq">FAQ</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#testimonials">Success Stories</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+            </li>
         </ul>
     </nav>
     
@@ -108,7 +120,7 @@
     <section id="resources">
         <h2>Resources</h2>
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6 mb-3">
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">Official Site</h5>
@@ -116,7 +128,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 mb-3">
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">Explore GitHub</h5>
@@ -136,11 +148,13 @@
 
     <section id="testimonials">
         <h2>Success Stories</h2>
-        <blockquote>
-            <p>"Participating in HacktoberFest helped me grow my coding skills and connect with other developers!" - Jane Doe</p>
+        <blockquote class="blockquote">
+            <p class="mb-0">"Participating in HacktoberFest helped me grow my coding skills and connect with other developers!"</p>
+            <footer class="blockquote-footer">Jane Doe</footer>
         </blockquote>
-        <blockquote>
-            <p>"I made my first open source contribution during HacktoberFest and it was an amazing experience!" - John Smith</p>
+        <blockquote class="blockquote">
+            <p class="mb-0">"I made my first open source contribution during HacktoberFest and it was an amazing experience!"</p>
+            <footer class="blockquote-footer">John Smith</footer>
         </blockquote>
     </section>
 
@@ -148,13 +162,13 @@
         <h2>Contact Us</h2>
         <form action="#" method="post">
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+            <input type="text" class="form-control" id="name" name="name" required>
             
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+            <input type="email" class="form-control" id="email" name="email" required>
             
             <label for="subject">Subject:</label>
-            <select id="subject" name="subject" required>
+            <select class="form-control" id="subject" name="subject" required>
                 <option value="">Select a subject</option>
                 <option value="general">General Inquiry</option>
                 <option value="support">Support</option>
@@ -162,16 +176,16 @@
             </select>
 
             <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
+            <textarea class="form-control" id="message" name="message" required></textarea>
             
-            <button type="submit">Send</button>
+            <button type="submit" class="mt-3">Send</button>
         </form>
         
         <h3>Subscribe to Our Newsletter</h3>
         <form action="#" method="post">
             <label for="newsletter-email">Email:</label>
-            <input type="email" id="newsletter-email" name="newsletter-email" required>
-            <button type="submit">Subscribe</button>
+            <input type="email" class="form-control" id="newsletter-email" name="newsletter-email" required>
+            <button type="submit" class="mt-3">Subscribe</button>
         </form>
     </section>
 
